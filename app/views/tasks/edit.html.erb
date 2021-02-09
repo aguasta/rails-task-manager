@@ -1,3 +1,4 @@
+<div class="bigcontainer">
 
 <h1 class="container"> Edit Task  : <%=@task.title  %></h1>
 
@@ -15,9 +16,12 @@
 
 
 <div class="container">
-<%= link_to("Click to Delete", task_path(@task), method: :delete, data: {confirm: "Are you sure?"}) %>
+<%= link_to("Delete Task 🗑", task_path(@task), method: :delete, data: {confirm: "Are you sure?"}) %>
 </div>
 
-<div class="container">
+<h4 class="container">
 <a href="/tasks">Back to all Tasks</a>
+</h4>
+
+
 </div>

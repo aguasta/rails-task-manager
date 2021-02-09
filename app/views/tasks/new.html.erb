@@ -1,5 +1,9 @@
-<h1>New task </h1>
 
+<div class="bigcontainer">
+<h1 class="container">New task </h1>
+
+
+<div class="container">
 <%= form_for(@task) do |f|  %>
     <%= f.label :title  %>
     <%= f.text_field :title  %>
@@ -7,8 +11,12 @@
     <%= f.text_field :details  %>
      <%= f.submit  %>
 <% end %>
-
-
-<div>
-<a href="/tasks">Back to all Tasks</a>
 </div>
+
+
+
+<h4 class="container">
+<a href="/tasks">Back to all Tasks</a>
+</h4>
+</div>
+
