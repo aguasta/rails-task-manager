@@ -1,24 +1,28 @@
-<h1> Task name : <%=@task.title  %></h1>
-
-<div>
-<%= link_to("Edit?", edit_task_path(@task)) %> or 
-<%= link_to("Delete?", task_path(@task), method: :delete, data: {confirm: "Are you sure?"}) %>
-</div>
-
-<h2>Details:</h2> <%= @task.details  %>
+<h1 class="container"> Task name : <%=@task.title  %></h1>
 
 
-<div>
+
+<h4 class="container">Details:</h4> 
+<p class="container">
+<%= @task.details  %>
+</p>
+
+
+
+<div class="container">
     <% if @task.completed == true %>
-<h3> This task is completed ✅</h3>
+<h4> This task is completed ✅</h4>
     <% else %>
-<h3> This task is not completed yet ❌</h3>
+<h4> This task is not completed yet ❌</h4>
     <% end %>
 
 </div>
 
-<div>
+<div class="container">
 <a href="/tasks">Back to all Tasks</a>
 </div>
-
+<div class="container">
+<%= link_to("Edit?", edit_task_path(@task)) %> or 
+<%= link_to("Delete?", task_path(@task), method: :delete, data: {confirm: "Are you sure?"}) %>
+</div>
 
