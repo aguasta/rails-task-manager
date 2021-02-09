@@ -2,10 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-body {
-    
-}
-
 .container {
     display: flex;
     align-content: center;
@@ -15,7 +11,7 @@ body {
 }
 
 .bigcontainer {
-    width: 900px;
+    width: 600px;
     border-style: solid;
     border-radius: 12px;
     border-width: thick;
