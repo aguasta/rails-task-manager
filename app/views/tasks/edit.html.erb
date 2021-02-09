@@ -1,6 +1,7 @@
 
-<h1> Edit Task  : <%=@task.title  %></h1>
+<h1 class="container"> Edit Task  : <%=@task.title  %></h1>
 
+<div class="container">
 <%= form_for(@task) do |f|  %>
     <%= f.label :title  %>
     <%= f.text_field :title  %>
@@ -10,9 +11,13 @@
     <%= f.check_box :completed %>
      <%= f.submit  %>
 <% end %>
+</div>
 
 
+<div class="container">
+<%= link_to("Click to Delete", task_path(@task), method: :delete, data: {confirm: "Are you sure?"}) %>
+</div>
 
-<div>
+<div class="container">
 <a href="/tasks">Back to all Tasks</a>
 </div>

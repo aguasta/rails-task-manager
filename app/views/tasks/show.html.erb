@@ -8,18 +8,14 @@
     <% end %>
 
 </div>
-<br>
-<h5 class="container">Details:</h5> 
-<p class="container">
-<%= @task.details  %>
-</p>
 
+<h5 class="container">Details: <%= @task.details  %> </h5> 
+
+<br>
 <div class="container">
 <%= link_to("Click to Edit", edit_task_path(@task)) %> 
 </div>
-<div class="container">
-<%= link_to("Click to Delete", task_path(@task), method: :delete, data: {confirm: "Are you sure?"}) %>
-</div>
+
 
 
 
